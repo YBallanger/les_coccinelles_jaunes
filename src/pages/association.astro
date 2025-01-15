@@ -3,34 +3,24 @@ import Layout from "src/layouts/Layout.astro";
 ---
 
 <Layout>
-    <div class="lg:flex p-4 items-center justify-center">
-        <div class="p-8 flex-1">
-            <h2 class="text-center text-3xl py-6">L'association</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-        </div>
-        <div class="p-8 mx-auto max-w-xl">
-            <img
-                src="https://picsum.photos/500/500"
-                width="500px"
-                height="500px"
-                alt="Image de présentation de l'association"
-            />
-        </div>
+  <div class="flex lg:flex-row flex-col p-4 items-center justify-center flex-1">
+    <div class="p-8 max-w-lg w-full">
+      <h2 class="text-center text-3xl py-6">L'association</h2>
+      <p>
+        Notre association a pour but de lutter contre l'isolement des jeunes.
+        Toute personne est conviée, qu'elle soit étudiante, sans emploi ou en
+        activité professionnelle. Nos ateliers ont pour but de vous permettre de
+        rencontrer d'autres personnes isolées, et de créer des liens.
+      </p>
     </div>
+    <div class="p-8 max-w-lg w-full">
+      <img
+        class="mx-auto"
+        src="https://picsum.photos/400/450"
+        width="400px"
+        height="450px"
+        alt="Image de présentation de l'association"
+      />
+    </div>
+  </div>
 </Layout>
