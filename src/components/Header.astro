@@ -1,19 +1,27 @@
 ---
 import { Image } from "astro:assets";
 import coccinelle from "@assets/img/coccinelle_jaune.png";
+import BurgerMenu from "./BurgerMenu";
 ---
 
 <div
-  class="bg-yellow-300 h-36 w-full flex flex-wrap flex-shrink-0 justify-between items-center text-2xl px-6 font-extrabold text-center"
+  class="bg-yellow-300 h-24 sm:h-36 w-full flex flex-wrap flex-shrink-0 justify-between items-center text-2xl px-6 font-extrabold text-center"
 >
-  <a href="/">
-    <Image class={"my-auto"} src={coccinelle} alt={"Image de présentation"} />
-  </a>
+  <div class="w-28 sm:w-44">
+    <a href="/">
+      <Image src={coccinelle} alt={"Image de présentation"} />
+    </a>
+  </div>
+
   <div class="h-full items-center hidden md:flex">
     <a class="pr-6 hover:text-gray-700" href="/association">L'association</a>
     <div class="inline-block w-0.5 self-stretch bg-gray-900 my-8"></div>
     <a class="px-6 hover:text-gray-700" href="/activites">Les activités</a>
     <div class="inline-block w-0.5 self-stretch bg-gray-900 my-8"></div>
     <a class="pl-6 hover:text-gray-700" href="/contact">Contact</a>
+  </div>
+
+  <div class="md:hidden">
+    <BurgerMenu client:load />
   </div>
 </div>
